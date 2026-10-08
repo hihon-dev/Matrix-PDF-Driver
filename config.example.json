@@ -1,0 +1,7 @@
+{
+  "output_folder": "C:\\MatrixPDF",
+  "filename_pattern": "{datetime}_{title}",
+  "image_quality": "lossless",
+  "printer_name": "Matrix PDF-Driver",
+  "port": 9100
+}

@@ -1,0 +1,34 @@
+Matrix PDF-Driver
+Copyright (C) Hihon Inc. (주식회사 히온)
+
+This program is free software: you can redistribute it and/or modify it under
+the terms of the GNU Affero General Public License, version 3, as published by
+the Free Software Foundation. It is distributed WITHOUT ANY WARRANTY. The full
+license text is in LICENSE.txt.
+
+The complete source code of Matrix PDF-Driver is available from Hihon Inc. on
+request (and from the project's public repository once published).
+
+
+Bundled third-party software
+============================
+
+GPL Ghostscript 10.08.0  (gs\gswin32c.exe, gs\gsdll32.dll)
+  Copyright (C) Artifex Software, Inc.
+  License: GNU Affero General Public License v3 (see LICENSE.txt)
+  The files are the unmodified official 32-bit Windows binaries.
+  Source code: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/tag/gs10080
+  Home page:   https://www.ghostscript.com/
+
+Microsoft Visual C++ 2015-2019 Redistributable (x86)  (vcredist_x86.exe, installer only)
+  Copyright (C) Microsoft Corporation
+  Distributed under the Microsoft Visual Studio redistributable license terms.
+  Installed only when the runtime is missing on the PC.
+
+Python 3.8 runtime (embedded in MatrixPdfDriver.exe)
+  Copyright (C) Python Software Foundation
+  License: Python Software Foundation License
+
+PyInstaller bootloader (embedded in MatrixPdfDriver.exe)
+  License: GPL v2 or later with a special exception that permits distributing
+  bundled applications under any license.
