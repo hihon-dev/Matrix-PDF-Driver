@@ -10,9 +10,27 @@
 - 지원: Windows 7 SP1 ~ Windows 11 (32비트, 64비트)
 - 라이선스: GNU AGPL v3 (`LICENSE.txt`). 함께 들어 있는 다른 프로그램은 `THIRD-PARTY.txt` 참고
 
+## 주요 기능
+
+- **어느 프로그램에서나 PDF로 인쇄**: "Matrix PDF-Driver"라는 프린터가 생기고, 여기로 인쇄한 것이 PDF가 됩니다.
+- **두 가지 저장 방식**: 인쇄할 때마다 저장 위치를 묻거나, 정해 둔 폴더에 묻지 않고 바로 저장합니다.
+- **규칙으로 만드는 파일 이름**: 고정된 앞 이름에 문서 이름, 날짜, 시각, 인쇄한 사람, PC 이름, 일련번호를 조합합니다.
+- **폴더 자동 생성**: 저장 폴더에 날짜나 사람을 넣으면 인쇄할 때 하위 폴더가 만들어집니다.
+- **보관용 형식**: 일반 PDF와 장기 보관용 PDF/A-1b, PDF/A-2b, PDF/A-3b를 고를 수 있습니다.
+- **품질 선택**: 그림을 원본 그대로 두거나 파일 크기를 줄이고, 컬러·흑백과 페이지 자동 회전을 고릅니다.
+- **인쇄 후 동작**: 변환 과정을 잠깐 보여 주고, 만든 PDF를 바로 열고, 실제 프린터로도 동시에 출력할 수 있습니다.
+- **글자가 살아 있는 PDF**: 한글을 포함해 글자가 글자로 남아 선택, 검색, 추출이 됩니다.
+- **영어와 한국어**: 설정에서 언어를 바꾸고, 설치도 두 언어로 할 수 있습니다.
+- **광고·계정 없음, 무료**: GNU AGPL v3 공개 소스입니다.
+
+## 내려받기
+
+[Matrix-PDF-Driver-Setup.exe](https://github.com/hihon-dev/Matrix-PDF-Driver/releases/latest/download/Matrix-PDF-Driver-Setup.exe) (약 30MB) —
+모든 버전은 [Releases](https://github.com/hihon-dev/Matrix-PDF-Driver/releases)에서 볼 수 있습니다.
+
 ## 설치
 
-`dist\Matrix-PDF-Driver-Setup.exe`를 실행합니다.
+내려받은 `Matrix-PDF-Driver-Setup.exe`를 실행합니다.
 
 1. 관리자 권한을 묻는 창에서 "예"를 누릅니다.
 2. 설치 창은 영어로 시작합니다. 첫 화면의 Language에서 한국어를 고르면 한국어로 바뀝니다. 라이선스에 동의하고, 설치 폴더를 확인한 뒤 **설치**를 누릅니다.

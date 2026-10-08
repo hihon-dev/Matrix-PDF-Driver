@@ -1,5 +1,4 @@
 __pycache__/
 *.pyc
-# build output: only the installer is published
-dist/*
-!dist/Matrix-PDF-Driver-Setup.exe
+# build output; the installer is published on the Releases page
+dist/

@@ -10,9 +10,23 @@ It can ask where to save each time, or save straight into a folder you choose.
 - Languages: English (default) and Korean
 - License: GNU AGPL v3 (`LICENSE.txt`). Bundled third-party software is listed in `THIRD-PARTY.txt`.
 
+## Features
+
+- **Print to PDF from any program.** A printer named "Matrix PDF-Driver" is added; whatever you print to it becomes a PDF.
+- **Two ways to save.** Ask where to save each time, or save automatically into a folder without any question.
+- **File names built from rules.** Combine a fixed prefix with the document name, date, time, user, computer name or a running number.
+- **Folders created for you.** Add the date or the user to the save folder and the subfolders are made as you print.
+- **Archive formats.** Plain PDF, or PDF/A-1b, PDF/A-2b and PDF/A-3b for long-term storage.
+- **Quality options.** Keep images as they are or reduce the file size; color or grayscale; optional automatic page rotation.
+- **After printing.** Show a short progress window, open the PDF right away, or send it to a real printer at the same time.
+- **Searchable text.** Text stays as text, including Korean, so it can be selected, searched and extracted.
+- **English and Korean.** Switch the language in the settings; the setup can run in either.
+- **No ads, no account, free.** Open source under the GNU AGPL v3.
+
 ## Download
 
-[Matrix-PDF-Driver-Setup.exe](dist/Matrix-PDF-Driver-Setup.exe) (about 30 MB)
+[Matrix-PDF-Driver-Setup.exe](https://github.com/hihon-dev/Matrix-PDF-Driver/releases/latest/download/Matrix-PDF-Driver-Setup.exe) (about 30 MB) —
+or see all versions on the [Releases](https://github.com/hihon-dev/Matrix-PDF-Driver/releases) page.
 
 The installer is not code-signed yet, so Windows may show a warning before it runs.
 Choose "More info", then "Run anyway".
