@@ -160,6 +160,7 @@ You need:
 
 The result is `dist\Matrix-PDF-Driver-Setup.exe`.
 Pass `-SigningCertificateThumbprint` to sign it if you have a code-signing certificate.
+Pass `-PublishDirectory <folder>` to also copy the installer to another folder, for example the download folder of a web server.
 
 On-screen text is written in Korean in the source and wrapped in `tr()`; English comes from the `TRANSLATIONS` table.
 When you add text, do both. The tests fail if an English entry is missing.

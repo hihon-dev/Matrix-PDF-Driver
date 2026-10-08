@@ -161,6 +161,7 @@ Matrix Ai-Cube로 자동 수집하는 PC에서는 페이지 방향을 "인쇄한
 
 결과물은 `dist\Matrix-PDF-Driver-Setup.exe`입니다.
 코드 서명 인증서가 있으면 `-SigningCertificateThumbprint`로 지문을 넘깁니다.
+`-PublishDirectory <폴더>`를 주면 설치 파일을 그 폴더에도 복사합니다(예: 내려받기를 제공하는 웹 서버의 폴더).
 서명하지 않은 설치 파일은 Windows가 실행 전에 경고를 띄웁니다.
 
 ## 확인 상태

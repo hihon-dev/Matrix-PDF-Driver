@@ -3,7 +3,9 @@ param(
     [string]$OutputDirectory,
     [string]$Python = (Join-Path $env:LOCALAPPDATA 'Programs\Python\Python38-32\python.exe'),
     [string]$SigningCertificateThumbprint = $env:MATRIX_SIGN_CERT_THUMBPRINT,
-    [string]$TimestampUrl = 'http://timestamp.digicert.com'
+    [string]$TimestampUrl = 'http://timestamp.digicert.com',
+    # 빌드가 끝난 설치 파일을 함께 복사해 둘 폴더 (예: 내려받기를 제공하는 웹 서버의 폴더). 비워 두면 복사하지 않는다.
+    [string]$PublishDirectory
 )
 
 $ErrorActionPreference = 'Stop'
@@ -118,6 +120,11 @@ Sign-Binary $outputExe
 
 Write-Host "설치 파일: $outputExe ($([Math]::Round((Get-Item $outputExe).Length / 1MB, 1)) MB)"
 Write-Host "SHA-256: $((Get-FileHash -Algorithm SHA256 -LiteralPath $outputExe).Hash)"
+if (-not [string]::IsNullOrWhiteSpace($PublishDirectory)) {
+    if (-not (Test-Path -LiteralPath $PublishDirectory -PathType Container)) { throw "복사할 폴더가 없습니다: $PublishDirectory" }
+    Copy-Item -LiteralPath $outputExe -Destination $PublishDirectory -Force
+    Write-Host "복사해 둔 곳: $(Join-Path $PublishDirectory (Split-Path $outputExe -Leaf))"
+}
 if ([string]::IsNullOrWhiteSpace($SigningCertificateThumbprint)) {
     Write-Warning '코드 서명 인증서가 없어 서명되지 않은 설치 파일입니다. Windows가 실행 전에 경고를 띄울 수 있습니다.'
 }
